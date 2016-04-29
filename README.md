@@ -2,7 +2,7 @@
 A JavaScript module providing the implementations of various **Queue** data structures.
 
 <hr />
-### - Simple Queue _(FIFO Queue)_
+### - Simple Queue
 A simple _(first-in, first-out)_ Queue. Items are removed in the order in which they were added.
 #### Methods
 - `push(item)` - Adds a new item to the Queue.
@@ -29,7 +29,7 @@ queue.pop();  // 'thirdItem'
 ```
 
 <hr />
-### - Stack _(LIFO Queue)_
+### - Stack
 A simple _(last-in, first-out)_ Stack. Items are removed in the reverse order in which they were added.
 #### Methods
 - `push(item)` - Adds a new item to the Queue.
@@ -84,7 +84,7 @@ priorityQueue.pop();  // 'Priority 1'
 ```
 
 <hr />
-### - Circular Queue _(Circular Buffer)_
+### - Circular Queue
 A Queue in which items can be iterated in a circular fashion. i.e when the "end" of the queue is encountered, the next item will be the one positioned at the "start" of the queue.
 #### Methods
 - `push(item)` - Adds a new item to the end of the Queue, regardless of the iterator position.
