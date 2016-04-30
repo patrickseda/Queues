@@ -60,7 +60,8 @@ stack.pop();  // 'firstItem'
 
 ### Priority Queue
 A Queue in which items are stored sorted by priority, and which are removed in the order of highest priority.
-_**NOTE**: Higher numerical values will have a higher priority than lower values. It is possible to create a custom comparator function (specific to sorting your own data) and pass it to the factory function _`Queues.newPriorityQueue(customComparator)`_._
+<br />
+_**NOTE**: Larger numerical values will have a higher priority than smaller values. It is possible to create a custom comparator function (specific to sorting your own data) and pass it to the factory function: _`Queues.newPriorityQueue(customComparator)`_._
 #### Methods
 - `push(item)` - Adds a new item to the Queue.
 - `pop()` - Removes and returns the next highest priority item from the Queue.

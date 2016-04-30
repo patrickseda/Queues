@@ -1,6 +1,6 @@
 {
   "name": "@pxtrick/queues",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Queue factory for creating various Queue data structures.",
   "main": "./lib/Queues.js",
   "homepage": "https://github.com/patrickseda/Queues",
