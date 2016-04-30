@@ -61,7 +61,7 @@ stack.pop();  // 'firstItem'
 ### Priority Queue
 A Queue in which items are stored sorted by priority, and which are removed in the order of highest priority.
 <br />
-_**NOTE**: Larger numerical values will have a higher priority than smaller values. It is possible to create a custom comparator function (specific to sorting your own data) and pass it to the factory function: _`Queues.newPriorityQueue(customComparator)`_._
+_**NOTE**: Larger numerical values will have a higher priority than smaller values. It is possible to create a custom comparator function (specific to sorting your own data) and pass it to the factory function:_ `Queues.newPriorityQueue(customComparator)`.
 #### Methods
 - `push(item)` - Adds a new item to the Queue.
 - `pop()` - Removes and returns the next highest priority item from the Queue.
@@ -96,7 +96,8 @@ A Queue in which items can be iterated in a circular fashion. i.e when the "end"
 - `next()` - Returns, but does not remove, the next item in the Queue. This also advances the iterator position.
 - `pop()` - Removes and returns the last item from the Queue, regardless of the iterator position.
 - `peek()` - Returns, but does not remove, the next item in the Queue. _This does **not** advance the iterator position_
-- `reset()` - Resets the iterator such that the next item requested will be the first one in the Queue.
+- `setIndex(value)` - Moves the iterator to the given index value. _Values outside of the Queue bounds are ignored._
+- `reset()` - Moves the iterator to the first index in the Queue.
 - `size()` - Returns the number of items in the Queue.
 - `empty()` - Empties the Queue of all items.
 
@@ -110,7 +111,6 @@ var circularQueue = Queues.newCircularQueue();
 circularQueue.push( {id:'firstItem'} );
 circularQueue.push( {id:'secondItem'} );
 circularQueue.push( {id:'thirdItem'} );
-circularQueue.size();  // 3
 
 circularQueue.next();  // 'firstItem'
 circularQueue.next();  // 'secondItem'
