@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.<br/>
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [0.0.7] - 2016-11-06
+### Changed
+- Fixed `pop()` to remove the element at the current iterator position.
+
+
 ## [0.0.6] - 2016-04-30
 ### Changed
 - Added `setIndex()` to `CircularQueue`.

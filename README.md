@@ -1,9 +1,9 @@
-## Queues
+# Queues
 A JavaScript module providing the implementations of various **Queue** data structures.
 
 <hr />
 
-### Simple Queue
+## Simple Queue
 A simple _(first-in, first-out)_ Queue. Items are removed in the order in which they were added.
 #### Methods
 - `push(item)` - Adds a new item to the Queue.
@@ -31,7 +31,7 @@ queue.pop();  // 'thirdItem'
 
 <hr />
 
-### Stack
+## Stack
 A simple _(last-in, first-out)_ Stack. Items are removed in the reverse order in which they were added.
 #### Methods
 - `push(item)` - Adds a new item to the Queue.
@@ -58,7 +58,7 @@ stack.pop();  // 'firstItem'
 
 <hr />
 
-### Priority Queue
+## Priority Queue
 A Queue in which items are stored sorted by priority, and which are removed in the order of highest priority.
 <br />
 _**NOTE**: Larger numerical values will have a higher priority than smaller values. It is possible to create a custom comparator function (specific to sorting your own data) and pass it to the factory function:_ `Queues.newPriorityQueue(customComparator)`.
@@ -89,12 +89,12 @@ priorityQueue.pop();  // 'Priority 1'
 
 <hr />
 
-### Circular Queue
+## Circular Queue
 A Queue in which items can be iterated in a circular fashion. i.e when the "end" of the queue is encountered, the next item will be the one positioned at the "start" of the queue.
 #### Methods
 - `push(item)` - Adds a new item to the end of the Queue, regardless of the iterator position.
-- `next()` - Returns, but does not remove, the next item in the Queue. This also advances the iterator position.
-- `pop()` - Removes and returns the last item from the Queue, regardless of the iterator position.
+- `next()` - Returns, but does not remove, the next item in the Queue. This also advances the iterator position. _(Useful for read-only iterating over a fixed set of items.)_
+- `pop()` - Removes and returns the next item in the Queue.
 - `peek()` - Returns, but does not remove, the next item in the Queue. _This does **not** advance the iterator position_
 - `setIndex(value)` - Moves the iterator to the given index value. _Values outside of the Queue bounds are ignored._
 - `reset()` - Moves the iterator to the first index in the Queue.
